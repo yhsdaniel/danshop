@@ -1,6 +1,5 @@
 {
   "homepage": "http://yhsdaniel.github.io/online-shop",
-  "name": "online-shop",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
