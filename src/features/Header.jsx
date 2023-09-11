@@ -49,9 +49,18 @@ const Header = () => {
     }
 
     return (
-        <header className='w-full h-20 flex items-center justify-center' style={{ background: "#ded7cf" }}>
-            <div className="flex justify-center items-center w-2/12 hover:cursor-pointer mix-blend-multiply" onClick={linkToHome}><img src={logo} alt="Sample Logo" className='w-20' /></div>
-            <div className='w-2/12'></div>
+        <header className='w-full h-20 flex items-center justify-center'>
+            <div className="flex justify-center items-center w-2/12 hover:cursor-pointer mix-blend-multiply" onClick={linkToHome}><img src={logo} alt="Sample Logo" className='w-20' /><span className='font-bold text-2xl'>Dans Shop</span></div>
+            <div className='w-1/12'></div>
+            <div className='w-1/12 text-base cursor-pointer text-center'>
+                Deals
+            </div>
+            <div className='w-1/12 text-base cursor-pointer text-center'>
+                What's New
+            </div>
+            <div className='w-1/12 text-base cursor-pointer text-center'>
+                Delivery
+            </div>
             <div className="flex-1">
                 <label className="relative block">
                     <span className="sr-only">Search</span>

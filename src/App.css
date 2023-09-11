@@ -16,7 +16,7 @@ body {
 }
 
 .bg-login {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./components/img/bg-login.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./img/bg-login.jpg');
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;

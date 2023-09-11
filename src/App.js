@@ -1,9 +1,9 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import {Home} from './components/container/Home';
-import LoginForm from './components/features/LoginForm';
-import ListCart from './components/container/ListCart';
-import DetailProduct from './components/features/DetailProduct';
+import { Home } from './container/Home';
+import LoginForm from './features/LoginForm';
+import ListCart from './container/ListCart';
+import DetailProduct from './features/DetailProduct';
 
 function App() {
   return (
