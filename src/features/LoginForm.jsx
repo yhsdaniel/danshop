@@ -13,7 +13,7 @@ const LoginForm = () => {
     const handleSubmit = () => {
         sessionStorage.setItem('user', username)
         dispatch(getUser({username, password}))
-        navigate('/online-shop')
+        navigate('/')
     }
 
     return (

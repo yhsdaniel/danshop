@@ -20,21 +20,19 @@ const Category = () => {
 
     return (
         <div className='mt-6 mb-6 w-full h-full flex flex-col'>
-            <div className='flex justify-center items-center my-6'>
-                <div className='w-full pl-4'><hr className='border-t-gray-700'/></div>
-                <div className='w-2/12 py-2 text-xl font-bold text-black text-center absolute' style={{background: "#fff"}}>Shop by Category</div>
+            <div className='flex justify-center items-center my-6 h-full'>
+                <div className='w-full pl-4'><hr className='border-t-gray-700' /></div>
+                <div className='w-2/12 py-2 text-xl font-bold text-black text-center absolute' style={{ background: "#fff" }}>Shop by Category</div>
             </div>
-            <div className='flex justify-center items-center h-8 mt-3 pl-4'>
-                <Grid container spacing={{ xs: 2, md: 2 }} columns={{ xs: 4, sm: 8, md: 12 }} className="flex justify-center items-center" style={{ margin: "0", height: "100%"}}>
-                    <div className='h-full w-1/6 flex justify-center items-center'>
-                        <span className='text-sm cursor-pointer ease-in-out duration-150 hover:font-bold hover:border-b-2 hover:border-black text-black' onClick={displayAllProduct}>All Product</span>
+            <div className='flex justify-center items-center h-full mt-10 pl-4'>
+                <Grid container spacing={{ xs: 2, md: 2 }} columns={{ xs: 4, sm: 8, md: 12 }} className="h-full flex justify-center items-center">
+                    <div className='h-full mx-4' onClick={displayAllProduct}>
+                        <span className='text-sm cursor-pointer ease-in-out duration-200 border border-gray-400 rounded-md p-3 hover:border-gray-700 hover:bg-gray-700 hover:text-white text-black text-center'>All Product</span>
                     </div>
                     {data.map((val) => (
-                        <Grid item xs={1} sm={1} md={1.5} key={val} className="flex justify-center items-center cursor-pointer" style={{padding: '0'}}>
-                            <div onClick={() => handlePickCategory(val)} className='flex justify-center items-center flex-col picker-category'>
-                                <span className='h-full text-sm ease-in-out duration-150 hover:font-bold hover:border-b-2 hover:border-black text-black'>{val}</span>
-                            </div>
-                        </Grid>
+                        <div onClick={() => handlePickCategory(val)} className='h-full mx-4'>
+                            <span className='text-sm cursor-pointer ease-in-out duration-200 border border-gray-400 rounded-md p-3 hover:border-gray-700 hover:bg-gray-700 hover:text-white text-black text-center'>{val}</span>
+                        </div>
                     ))}
                 </Grid>
             </div>
