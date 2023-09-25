@@ -21,8 +21,8 @@ const Category = () => {
     return (
         <div className='mt-6 mb-6 w-full h-full flex flex-col'>
             <div className='flex justify-center items-center my-6'>
-                <div className='w-full pl-4'><hr className='border-black'/></div>
-                <div className='w-2/12 py-2 text-2xl font-bold text-black text-center absolute' style={{background: "rgb(237, 237, 237)"}}>Top Category</div>
+                <div className='w-full pl-4'><hr className='border-t-gray-700'/></div>
+                <div className='w-2/12 py-2 text-xl font-bold text-black text-center absolute' style={{background: "#fff"}}>Shop by Category</div>
             </div>
             <div className='flex justify-center items-center h-8 mt-3 pl-4'>
                 <Grid container spacing={{ xs: 2, md: 2 }} columns={{ xs: 4, sm: 8, md: 12 }} className="flex justify-center items-center" style={{ margin: "0", height: "100%"}}>

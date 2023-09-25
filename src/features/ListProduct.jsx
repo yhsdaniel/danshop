@@ -52,7 +52,7 @@ const ListProduct = () => {
                         /*---------------------- List All Product -------------------*/
                         data.map((val) => (
                             <Grid item xs={2} sm={3} md={3} key={val.id}>
-                                <div className='flex justify-center items-center flex-col h-72 my-2 cursor-pointer list' onClick={() => handleGoToDetailProduct(val.id)}>
+                                <div className='flex justify-center items-center flex-col h-72 my-2 cursor-pointer list border border-gray-300' onClick={() => handleGoToDetailProduct(val.id)}>
                                     <div className='flex justify-center items-center w-full h-full bg-white'>
                                         <img src={val.image} alt="Sample Image" className='w-6/12 h-auto' />
                                     </div>
